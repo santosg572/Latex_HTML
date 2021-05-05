@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MathJax TeX Test Page</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+</head>
+<body>
+
+<div style="float: left; width: 45%">
+
+<font size="4">
+
+<font color="blue"> 5.6.5 Metodos Runge-Kutta  </font>
+
+<hr>
+
+straightforward - 
+
+<br> <br>
+
+\( \mathbf{\phi} (x, \mathbf{y}; h) = \sum_{s=1}^r \alpha_s \mathbf{k}_s \)
+
+<br> <br>
+
+\( \mathbf{k}_1(x, \mathbf{y}) = f(x, \mathbf{y}), \)
+
+<br> <br>
+
+\( \mathbf{k}_s (x, \mathbf{y}; h) = f(x + \mu_s h, \mathbf{y} + h \sum_{j=1}^{s-1} \lambda_{sj} \mathbf{k}_j ), s=2,3, ..., r \)
+
+<br> <br>
+
+Es natura en (5.66) para imponer las condiciones
+
+<br> <br>
+
+\( \mu_s = \sum_{j=1}^{s-1} \lambda_{sj} , s=2, 3, ..., r ; \sum_{s=1}^r \alpha_s = 1 \)
+
+<br> <br>
+
+tyhe last one is nothing -
+
+<br> <br>
+
+Nosotros llamaremos (5.66) un método de Runge-Kutta r-etapa explicito; 
+
+<br> <br>
+
+Mas generalemente, nosotros podemos considerar los metodos de Runge-Kutta r-stage implicito
+
+<br> <br>
+
+\( \mathbf{\phi} (x, \mathbf{y}; h) = \sum_{s=1}^r \alpha_s \mathbf{k}_s (x, \mathbf{y}; h) \);
+
+<br> <br>
+
+\( \mathbf{k}_s = f(x + \mu_s h, \mathbf{y} + h \sum_{j=1}^r \lambda_{sj} \mathbf{k}_j ), s = 1, 2, ..., r \)
+
+
+
+ 
+
+</font>
+
+</div>
+<div style="float: right; width: 45%">
+
+<font size="4">
+
+<br> <br>
+
+<a href="intro.html">Ver la introducción</a>
+
+</div>
+</body>
+</html>
+

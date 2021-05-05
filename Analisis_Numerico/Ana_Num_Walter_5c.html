@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MathJax TeX Test Page</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+</head>
+<body>
+
+<div style="float: left; width: 45%">
+
+<font size="4">
+
+<font color="blue"> 5.6.3 Metodos de Euler Mejorados  </font>
+
+<hr>
+
+there is too much inertia 
+
+<br>
+
+one should not follow
+
+<br>
+
+halfway
+
+<br>
+
+retake
+
+<br>
+
+\( \mathbf{y}_{next} = \mathbf{y} + h f (x + \frac{1}{2} h, \mathbf{y} + \frac{1}{2} h f(x, \mathbf{y}) \)
+
+<br> <br>
+
+o
+
+<br> <br>
+
+\( \mathbf{\phi}(x, \mathbf{y}; h) = f(x \frac{1}{2}h, \mathbf{y} + \frac{1}{2} h f(x, \mathbf{y})) \)
+
+<br> <br>
+
+nesting -
+
+<br>
+
+it may be desirable to undo the nesting -
+
+<br> <br>
+
+\( \mathbf{k}_1(x \mathbf{y}) = f(x, \mathbf{y}) \)
+
+<br> <br>
+
+\( \mathbf{k}_2(x \mathbf{y};h) = f(x + \frac{1}{2} h, \mathbf{y} + \frac{1}{2} h \mathbf{k}_1).
+
+<br> <br>
+
+\( \mathbf{y}_{next} = \mathbf{y} + h \mathbf{k}_2 \)
+
+<br> <br>
+
+two trial slopes -
+
+<br>
+
+nearby -
+
+<br>
+
+latter
+
+<br>
+
+having waited too long -
+
+<br> <br>
+
+\( \mathbf{k}_1 (x,y) = f(x, \mathbf{y}) \)
+
+<br> <br>
+
+\( \mathbf{k}_1 (x,\mathbf{y}; h) = f(x+y, \mathbf{y} + h \mathbf{k}_1) \),
+
+<br> <br>
+
+\( \mathbf{y}_{next} = \mathbf{y} + \frac{1}{2} h (\mathbf{k}_1 + \mathbf{k}_2) \)
+
+<br> <br>
+
+Este es algunas veces referido como el método de Heun o la regla de trapezoide.
+
+<br> <br>
+
+is to raise -
+
+<br>
+
+
+
+ 
+
+</font>
+
+</div>
+<div style="float: right; width: 45%">
+
+<font size="4">
+
+364
+
+<br>
+
+5.6.4 Metodos de Dos-Etapas Segundo-Orden
+
+<br> <br>
+
+\( \mathbf{\phi} (x, \mathbf{y}; h) = \alpha_1 \mathbf{k}_1 + \alpha_2 \mathbf{k}_2, \)
+
+<br> <br>
+
+donde
+
+<br> <br>
+
+\( \mathbf{k}_1(x, \mathbf{y}) = f(x, \mathbf{y}) \)
+
+<br> <br>
+
+\( \mathbf{k}_2(x, \mathbf{y}; h) = f(x + \mu h, \mathbf{y} + \mu h \mathbf{k}_1 ) \)
+
+<br> <br>
+
+at our disposal -
+
+<br>
+
+so as -
+
+<br>
+
+Para expander \( \mathbf{\phi} \), necesitamos la expansión de Taylor para funciones de varias variables,
+
+<br> <br>
+
+\( f(x + \Delta x, \mathbf{y} + \Delta \mathbf{y}) = f + f_x \Delta x + f_y \Delta \mathbf{y} + \frac{1}{2} [f_{xx} (\Delta x) ^2 + 2 f_{xy} \Delta x \Delta y \)
+
+<br> <br>
+
+\( + (\Delta y)^T f_{yy} (\Delta y) ] + ... \),
+
+<br> <br>
+
+donde \( f_y \) denota el Jacobiano de \( f \) y \( f_{yy} = [f_{yy}^i] \) el vector de matrices Hessian de f.
+
+<br> <br>
+
+<a href="intro.html">Ver la introducción</a>
+
+</div>
+</body>
+</html>
+

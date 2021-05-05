@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MathJax TeX Test Page</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+</head>
+<body>
+
+<div style="float: left; width: 45%">
+
+<font size="4">
+
+<font color="blue"> C5. Problemas de Valor Inicial para ODEs: Métodos de Un Paso  </font>
+
+<hr>
+
+Problemas de valor inicial para ecuaciones diferenciales ordinarias (ODEs) ocurren en casi todas la ciencias.
+
+<br> <br>
+
+5.1 Ejemplos
+
+<br> <br>
+
+Nuestro promer ejemplo es muy trivial: supongamos que necesitamos calcular la integral
+
+<br>
+
+\( I = \int_a^b f(t) dt  \)
+
+<br>
+
+para alguna funcion dada f en [a,b]. Sea \( y(x) = \int_a^x f(t) dt \), entonces se obtiene
+
+<br>
+
+\( \frac{dy}{dx} = f(x), y(a)=0 \)
+
+Este es un problema de valor inicial para una ecuacion diferencial de primer orden. Resolviendo la ecuación anterior en [a,b], uno obtiene I = y(b)
+
+
+<br> <br>
+
+Ejemplo 2. Resolver la siguiente integral
+
+<br>
+
+\( I = \int_0^{infty} J_0(t^2) e^{-t} dt \)
+
+conteniendo la funcion de Bessel \( J_0(x^2) \). esta satisface la ecuacion diferencial de segundo orden lineal
+
+<br>
+
+\( \frac{d^2y}{dx^2} + (2 - \frac{1}{x} \frac{dy}{dx} + 4x^2 y = 0, x > 0 \)
+
+<br>
+
+con condiciones iniciales
+
+<br>
+
+y(0) = 1, y'(0) = 0
+
+<br>
+
+Pongamos
+
+<br> <br>
+
+\( y_1(x) = \int_0^x J_0(t^2) e^{-t} dt, t_2(x) = J_0(x^2), y_3(x) = y'_2(x) \)
+
+<br> <br>
+
+y obtenemos
+
+<br> <br>
+
+\( \frac{dy_1}{dx} = e^{-x} y_2,	y_1(0) = 0, \)
+
+<br>
+
+\( \frac{y_2}{dx} = y_3,		y_2(0) = 1 \)
+
+<br>
+
+\( \frac{dy_3}{dx} = -(2 - \frac{1}{x}) y_3 - 4x^2 y_2,	y_3(0) = 9 \)
+
+es un problema de valor inicial para un sistema de ecuaciones diferenciales lineales de primer orden. 
+
+
+</font>
+
+</div>
+<div style="float: right; width: 45%">
+
+<font size="4">
+
+5.2 Tipos de Ecuaciones Diferenciales
+
+<br> <br>
+
+El problema de valor inicial estandard envuelve un sistema de ecuaciones diferenciales de primer orden
+
+<br> <br>
+
+\( \frac{dy^i}{dx} = f^i(x, y^1, y^2, ..., y^d), i=1,2, ...d \)
+
+<br> <br>
+
+la cual sera resuelta en un intervalo [a,b], dados los valores iniciales
+
+<br> <br>
+
+\( y^i(a) = y^i_0. i= 1,2, ..., d \)
+
+<br> <br>
+
+5.5 Descripción Local de Metodos de Un Paso
+
+<br> <br>
+
+Dados un punto generico \( x \in [a,b], \mathbf{y} \in \mathbb{R}^n \) definimos a single step del metodo de un-paso por
+
+<br> <br>
+
+\( \mathbf{y}_{next} = \mathbf{y} + h \mathbf{\phi} (x, \mathbf{y}; h), h > 0 \)
+
+<br> <br>
+
+la función \( \phi: [a,b] \times \mathbb{R}^d \times \mathbb{R}_{+} \rightarrow \mathbb{R}^d \)   
+
+</font>
+
+<br> <br>
+
+<a href="Ana_Num_Walter_5b.html"> CONTINUACION </a>
+
+</div>
+</body>
+</html>
+
