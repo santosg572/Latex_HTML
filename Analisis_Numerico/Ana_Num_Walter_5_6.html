@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MathJax TeX Test Page</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+</head>
+<body>
+
+<div style="float: left; width: 45%">
+
+<font size="4">
+
+<font color="blue"> 5.6 Ejemplos de Métodos de Un-Paso  </font>
+
+<hr>
+
+the slope field - el campo de la pendiente
+
+<br>
+
+the right-hand side - el lado derecho
+
+<br> <br>
+
+<strong> 5.6.1 Método de Euler </strong>
+
+<br> <br>
+
+Euler propuso su método en 1768, 
+
+<br>
+
+the early days of calculus - los primeros días del cálculo
+
+<br>
+
+<br>
+
+\( \mathbf{y}_{next} = \mathbf{y} + h f(x, \mathbf{y}). \)
+
+<br> <br>
+
+* consistente
+
+<br> <br>
+
+Para el error de truncación, tenemos por (5.32)
+
+<br> <br>
+
+\( \mathbf{T} (x, \mathbf{y}; h) = f(x,y) - \frac{1}{h} [\mathbf{u}(x+h) - \mathbf{u}(x) ] \)
+
+<br> <br>
+
+donde \( \mathbf{u} (t) \) es the reference solution definida en (5.30). Ya que \( \mathbf{u}'(x) = f(x, \mathbf{u}(x)) = 
+f(x, \mathbf{y}) \), nosotros podemos escribir, usando el teorema de Taylor,
+
+<br> <br>
+
+\( \mathbf{T} (x, \mathbf{y}; h) = \mathbf{u}'(x) - \frac{1}{h} [\mathbf{u}(x+h) - \mathbf{u}(x)] \)
+
+<br> <br>
+
+\( = \mathbf{u}'(x) - \frac{1}{h} [\mathbf{u}(x) + h \mathbf{u}'(x) + \frac{1}{2} h^2 \mathbf{u}''(\xi)  - \mathbf{u}(x)] \)  
+
+<br> <br>
+
+\( = - \frac{1}{2} h \mathbf{u}''(\xi), x < \xi < x+h \)
+
+</font>
+
+</div>
+<div style="float: right; width: 45%">
+
+<font size="4">
+
+361
+
+<br>
+
+<strong> 5.6.2 Métodod de Expansión de Taylor </strong>
+
+<br>
+
+amounts
+
+<br> <br>
+
+<a href="Ana_Num_Walter_5c.html">CONTINUACION</a>
+
+</div>
+</body>
+</html>
+
